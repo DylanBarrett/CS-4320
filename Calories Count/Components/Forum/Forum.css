@@ -1,0 +1,35 @@
+#forum-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post {
+  padding: 20px;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+#forum-title {
+  text-align: center;
+}
+#forum-header {
+  margin-top: 100px;
+  background-color: #007bff;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+#post-button {
+  margin: 25px;
+}
+.date {
+  position: relative;
+  float: right;
+}
+.fa-thumbs-up {
+  color: green;
+}

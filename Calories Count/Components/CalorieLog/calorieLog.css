@@ -1,0 +1,28 @@
+#goals-container {
+  display: block;
+  border: 1px;
+  background-color: #007bff;
+  border: 10px;
+  height: 400px;
+}
+#page-title {
+  margin-top: 30px;
+  color: white;
+}
+
+#counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 25px auto;
+  font-size: 18px;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  padding: 25px;
+}
+
+.column {
+  width: 30%;
+  text-align: center;
+}

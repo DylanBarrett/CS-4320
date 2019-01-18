@@ -1,0 +1,54 @@
+#post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#post {
+  padding: 20px;
+  margin-top: 100px;
+  height: 100%;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+}
+#post-content {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 15px 0;
+  color: black;
+}
+.reply {
+  padding: 20px;
+  margin: 10px 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(44, 43, 43);
+  color: white;
+}
+#post-buttons {
+  margin: 25px;
+}
+#reply-button {
+  margin: 0 5px;
+}
+#post-back-button {
+  margin: 0 5px;
+}
+
+.date {
+  position: relative;
+  float: right;
+}
+.hide {
+  opacity: 0;
+}
+.delete-button {
+  margin: 10px 0;
+}
+.fa-flag {
+  color: red;
+  cursor: pointer;
+}

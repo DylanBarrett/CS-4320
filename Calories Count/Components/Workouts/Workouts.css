@@ -1,0 +1,46 @@
+.workouts-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.background {
+  background-color: #007bff;
+  margin-top: 100px;
+}
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 40%;
+  min-width: 300px;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+}
+.column-sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  width: 30%;
+  padding: 20px;
+  min-width: 300px;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+}
+.workout-image {
+  max-width: 100%;
+  height: 300px;
+  margin: 5px;
+}
+.header {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
