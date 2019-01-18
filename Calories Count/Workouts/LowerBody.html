@@ -1,0 +1,321 @@
+<!--
+    // written by: Dylan Barrett
+// tested by: Dylan Barrett
+// debugged by: Dylan Barrett
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>LowerBody Workouts</title>
+
+	<style>
+		.body, html{
+			height: auto;
+			max-width: 100%;
+			background-color: darkslategray;
+		}
+		.wrapper{
+			max-width: 100%;
+    		border: 1px solid black;
+    		overflow: hidden;
+		}
+		.column {
+			margin: 10px;
+			border: 3px solid gray;
+    		float: left;
+    		width: 30%;
+    		padding: 2px;
+			border-radius: 3px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+    		clear: both;
+    		display: table;
+		}
+		* {
+    box-sizing: border-box;
+}
+		img{
+			max-width: 100%;
+			height: 300px;
+			margin: 5px;
+		}
+		button{
+			margin: 5px;
+			width: 100%;
+			height: auto;
+			align-self: center;
+		}
+				/* Header */
+		#background-image {
+		  background-image: url("../../images/deadlift.jpg");
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-attachment: fixed;
+		  width: 100%;
+		  height: 650px;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		}
+		#intro {
+		  color: white;
+		  font-size: 50px;
+		  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+			1px 1px 0 #000;
+		}
+		/* Description */
+		#description {
+		  margin: 50px 5%;
+		  display: flex;
+		  justify-content: space-between;
+		}
+
+		.landing-desc {
+		  margin: 20px 0;
+		}
+		.col {
+		  width: 32%;
+		  text-align: center;
+		  font-size: 20px;
+		}
+		.image-container {
+		  width: 100px;
+		  height: 100px;
+		}
+		.landing-button {
+		  width: 100px;
+		}
+
+		/* Forum */
+		#forum {
+		  background-image: url("../../images/forum.jpg");
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-attachment: fixed;
+		  width: 100%;
+		  height: 400px;
+		  justify-content: center;
+		  align-items: center;
+		  text-align: center;
+		  color: white;
+		  cursor: pointer;
+		  font-size: 30px;
+		  font-weight: bold;
+		  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+			1px 1px 0 #000;
+		}
+		#forum-desc {
+		  padding-top: 100px;
+		  position: relative;
+		  height: 100%;
+		  width: 100%;
+		  transition: 1s;
+		}
+		#forum-desc:hover {
+		  background-color: rgba(1, 1, 1, 0.7);
+		  transition: 1s;
+		}
+
+		/* Contact */
+		#contact {
+		  height: 300px;
+		  margin-top: 100px;
+		  margin-bottom: 100px;
+		  font-size: 20px;
+		}
+
+		/* Footer */
+		#footer-container {
+		  position: relative;
+		  bottom: 0;
+		  width: 100%;
+		  height: 150px;
+		  background-color: #343a40;
+		  color: white;
+		  display: flex;
+		  justify-content: space-between;
+		  align-items: center;
+		  padding: 5%;
+		  font-size: 15px;
+		}
+
+		#column-1 {
+		  width: 33%;
+		  text-align: left;
+		}
+		#column-2 {
+		  width: 33%;
+		  text-align: center;
+		}
+		#column-3 {
+		  width: 33%;
+		  text-align: right;
+		}
+		.social {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  color: white;
+		}
+		#menu {
+		  text-decoration: none;
+		  list-style: none;
+		  color: white;
+		}
+		.menu-link {
+		  color: white;
+		}
+		h1{
+		color: whitesmoke;
+		text-align: center;
+		padding: 5px;
+		margin: 5px;
+		}
+		.header{
+			background-color: #343a40;
+		}
+
+	</style>
+	
+	
+</head>
+	
+<body>
+	<div class="container-fluid" align="center" class="wrapper" "row">
+		<div class="header">
+		<h1>Lower Body Workouts</h1>
+		</div>
+		<!-- Quads modal content-->
+		<div class="column">
+			<div>
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Quads</button>
+			</div>
+		  <div class="modal fade" id="myModal" role="dialog">
+    		<div class="modal-dialog">
+      <!-- Modal content-->
+			  <div class="modal-content">
+				<div class="modal-header">
+		<!--          <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+				  <h4 class="modal-title">Quad Exercises</h4>
+				</div>
+				<div class="modal-body">
+				</div>
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+							<button class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Squats</button>
+						</h4>
+					  </div>
+
+						<div id="collapseOne" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div>
+									<img src="/Workouts/Images/squat-exercise.jpg">
+								</div>
+									<p>Make sure your legs are parallel to the ground at the bottom of your squat.</p>
+							</div>
+						</div>
+					</div>
+				  <!-- second accordion element -->
+				  <div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+							<button class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Leg Press</button>
+						</h4>
+					  </div>
+
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div>
+									<img src="/Workouts/Images/leg%20press.jpg">
+								</div>
+									<p>Make sure your legs are parallel to the ground at the bottom of your squat.</p>
+							</div>
+						</div>
+					</div>
+				  
+				  <div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+							<button class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Lunges</button>
+						</h4>
+					  </div>
+
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<div>
+									<img src="/Workouts/Images/lunges.jpg">
+								</div>
+									<p>Make sure you forward foot leg makes a 90 degree, and your back knee touches the ground.</p>
+							</div>
+						</div>
+					</div>
+				  
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+			  </div>
+			</div>
+		  </div>
+				<img src="/Workouts/Images/Quads.jpg" alt="Chest">
+			
+		</div>
+		
+		<!-- Hamstring modal content-->
+		<div class="column">
+			<div>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Hamstrings</button>
+			</div>
+			
+				<img src="/Workouts/Images/Hamstrings.jpg" alt="Chest">
+		</div>
+		
+		<!-- Calves modal content-->
+		<div class="column">
+			<div>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Calves</button>
+			</div>			
+				<img src="/Workouts/Images/Calves.jpg" alt="Chest">
+		</div>
+		
+		<!-- Glutes modal content-->
+		<div class="column">
+			<div>
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Glutes</button>
+			</div>
+				<img src="/Workouts/Images/Glutes.jpg" alt="Chest">
+			
+		<!-- Footer content-->	
+		</div>
+			<div id='footer-container'> 
+				<div id="column-1">
+				<a href="#" class="fa fa-facebook social"></a>
+				<a href="#" class="fa fa-twitter social"></a>
+				<a href="#" class="fa fa-instagram social"></a>
+				</div>
+				<div id="column-2"><h4>&copy Calories Count</h4><hr/></div>
+				<div id="column-3">
+					<ul id='menu'>
+						<li><h5>Menu</h5></li>
+						<li><a href='#' class='menu-link'>Home</a></li>
+						<li><a href='#' class='menu-link'>Dashboard</a></li>
+						<li><a href='#' class='menu-link'>Workouts</a></li>
+						<li><a href='#' class='menu-link'>Diets</a></li>
+						<li><a href='#' class='menu-link'>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+	</div>
+</body>
+</html>
